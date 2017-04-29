@@ -1,6 +1,6 @@
 # dclong/jupyterlab-rb
 
-JupyterLab with R base. 
+Spark Notebook in Docker.
 
 ## About the Author
 
