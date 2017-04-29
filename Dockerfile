@@ -9,7 +9,8 @@ RUN apt-get update \
     && tar -zxvf /$spark.tgz -C /opt/ \
     && rm /$spark.tgz
 
-RUN pip3 install toree-0.2.0.dev1.tar.gz \
+ADD toree-0.2.0.dev1.tar.gz /
+RUN pip3 install /toree-0.2.0.dev1.tar.gz \
     && jupyter toree install --spark_home=/opt/$spark/
 
 ADD script.sh /
