@@ -11,8 +11,9 @@ RUN yum update -y \
         scala \
     && wget https://downloads.lightbend.com/scala/2.11.11/$scala.rpm -O /$scala.rpm \
     && wget http://d3kbcqa49mib13.cloudfront.net/$spark.tgz -O /$spark.tgz \
-    && yum install /$scala.rpm \
+    && yum install -y /$scala.rpm \
     && tar -zxvf /$spark.tgz -C /opt/ \
+    && rm /$scala.rpm \
     && rm /$spark.tgz
 
 COPY toree-0.2.0.dev1.tar.gz /
