@@ -2,9 +2,7 @@ FROM dclong/jupyterlab:centos
 
 ARG version_scala=2.11.11
 ARG scala=scala-$version_scala
-ARG scala.rpm=${scala}.rpm
 ARG spark=spark-2.1.0-bin-hadoop2.7
-ARG spark.tgz=${spark}.tgz 
 
 RUN yum update -y \
     && yum install -y \
