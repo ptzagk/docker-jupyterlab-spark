@@ -1,6 +1,6 @@
-# dclong/jupyterlab-rb
+# dclong/jupyterlab-spark
 
-Spark Notebook in Docker.
+Spark with JupyterLab in Docker.
 
 ## About the Author
 
@@ -16,27 +16,3 @@ docker run -d -p 8888:8888 \
     -v $HOME:/jupyter \
     dclong/jupyterlab-spark
 ```
-```
-docker run -d -p 8888:8888 \
-    -e DOCKER_USER=`id -un` \
-    -e DOCKER_USER_ID=`id -u` \
-    -v $HOME:/jupyter \
-    dclong/jupyterlab-spark
-```
-
-```
-docker run -d -p 8888:8888 \
-    -e DOCKER_USER=ubuntu \
-    -e DOCKER_USER_ID=`id -u ubuntu` \
-    -e DOCKER_PASSWORD=ubuntu \
-    -v /home/ubuntu:/jupyter \
-    dclong/jupyterlab-spark
-```
-```
-docker run -d -p 8888:8888 \
-    -e DOCKER_USER=ubuntu \
-    -e DOCKER_USER_ID=`id -u ubuntu` \
-    -v /home/ubuntu:/jupyter \
-    dclong/jupyterlab-spark
-```
-
