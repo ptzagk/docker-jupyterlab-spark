@@ -1,4 +1,4 @@
-# dclong/jupyterlab-spark
+# [dclong/jupyterlab-spark](https://hub.docker.com/r/dclong/jupyterlab-spark/)
 
 Spark with JupyterLab in Docker.
 
