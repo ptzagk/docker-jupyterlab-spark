@@ -5,7 +5,7 @@ ARG spark=spark-2.1.2-bin-hadoop2.7
 RUN apt-get update \
     && apt-get install -y \
         scala maven \
-    && wget http://d3kbcqa49mib13.cloudfront.net/$spark.tgz -O /$spark.tgz \
+    && wget http://mirrors.advancedhosters.com/apache/spark/spark-2.1.2/spark-2.1.2-bin-hadoop2.7.tgz \
     && tar -zxvf /$spark.tgz -C /opt/ \
     && rm /$spark.tgz
 
