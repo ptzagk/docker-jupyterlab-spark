@@ -1,6 +1,6 @@
 FROM dclong/jupyterlab
 
-ARG spark=spark-2.1.2-bin-hadoop2.7
+ARG spark=spark-2.2.0-bin-hadoop2.7
 
 RUN apt-get update \
     && apt-get install -y \
