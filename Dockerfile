@@ -11,6 +11,7 @@ RUN apt-get update \
 
 COPY scripts /scripts
 RUN pip3 install /scripts/toree.tar.gz \
+    && pip3 install --upgrade setuptools \
     && jupyter toree install --spark_home=/opt/$spark/ \
     && rm /scripts/toree.tar.gz 
 
