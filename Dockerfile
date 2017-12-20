@@ -1,5 +1,6 @@
 FROM dclong/jupyterlab
 
+ENV HOME=/root
 ARG spark=spark-2.1.2-bin-hadoop2.7
 
 RUN apt-get update \
