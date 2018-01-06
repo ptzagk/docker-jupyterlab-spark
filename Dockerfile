@@ -1,10 +1,8 @@
-FROM dclong/jupyterlab
+FROM dclong/jupyterlab-scala
 
 ARG spark=spark-2.2.1-bin-hadoop2.7
 
 RUN apt-get update \
-    && apt-get install -y \
-        scala maven \
     && wget http://d3kbcqa49mib13.cloudfront.net/$spark.tgz -O /$spark.tgz \
     && tar -zxvf /$spark.tgz -C /opt/ \
     && rm /$spark.tgz
